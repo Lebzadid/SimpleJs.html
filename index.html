@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Js</title>
+
+    
+</head>
+<body>
+    <h1>Hello. What is your name?</h1>
+    <input id="userInput"> <br> <br>
+    <button onclick="myFunction1()" > Submit </button>
+    <h2 id="message1"> </h2>
+
+    <h1>What is your Height?</h1>
+    <input id="userHeight"> <br> <br>
+    <button onclick="myFunction2()" > Submit </button>
+    <h2 id="message2"> </h2>
+
+    <h1>Where are you from?</h1>
+    <input id="userCountry"> <br> <br>
+    <button onclick="myFunction3()" > Submit </button>
+    <h2 id="message3"> </h2>
+
+    <style>
+        body {background-color: teal; text-align: center; color: aliceblue; }
+    </style>
+
+    <script>
+        function myFunction1() {
+           let userInput = document.querySelector("#userInput");
+           let message = document.querySelector("#message");
+    
+           message1.innerHTML = "Welcome to my SimpleJs webpage, " + userInput.value;
+        
+        }
+    </script>
+
+<script>
+    function myFunction2() {
+       let userHeight = document.querySelector("#userHeight");
+       let message = document.querySelector("#message");
+
+       message2.innerHTML = "Great. You are, " + userHeight.value;
+    
+    }
+</script>
+
+<script>
+    function myFunction3() {
+       let userCountry = document.querySelector("#userCountry");
+       let message = document.querySelector("#message");
+
+       message3.innerHTML = "Awesome. You are from, " + userCountry.value;
+    
+    }
+</script>
+    
+</body>
+</html>
+
+
